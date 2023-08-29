@@ -23,11 +23,11 @@ img.loadPixels();
 
 
 
-  for (var i=cols-1;  i>=0; i--){
+  for (var i=0;  i<cols; i++){
     cir[i] =[]
      vehs [i]= []
    
-    for (var j=cols-1;  j>=0; j--){
+    for (var j=0;  j<cols; j++){
 
     w = width/cols
 x= i*w+w/2
@@ -57,7 +57,7 @@ c3 = brightness(avg)
 //circle(x,y,w2)
 
 //vehs.push(cir)
-let m = floor(w2)
+//let m = floor(w2)
 
 }
   }
@@ -75,8 +75,8 @@ function draw() {
 background(220);
 
 
-for (var i=cols-1;  i>=0; i--){
-  for (var j=cols-1;  j>=0; j--){
+for (var i=0;  i<cols; i++){
+  for (var j=0;  j>=cols; j++){
 ///fill (c)
 vehs[i][j].show()
 vehs[i][j].update()
